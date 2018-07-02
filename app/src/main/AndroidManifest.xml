@@ -20,7 +20,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".Usuarios" />
-        <activity android:name=".Voice2TextActivity"></activity>
+        <activity android:name=".Voice2TextActivity"/>
+        <activity android:name=".Reservas"/>
+        <activity android:name=".Detalle_Reservas"/>
+        <activity android:name=".Lugares"/>
     </application>
 
 </manifest>

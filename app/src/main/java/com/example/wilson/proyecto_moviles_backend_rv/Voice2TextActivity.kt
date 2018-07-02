@@ -16,7 +16,9 @@ class Voice2TextActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_voice2_text)
-        txtResultado.findViewById(R.id.txtResultado) as TextView
+        val txtResultado: TextView = findViewById(R.id.txtResultado)
+        txtResultado.text
+
 
     }
 
@@ -36,7 +38,7 @@ class Voice2TextActivity : AppCompatActivity() {
     override fun onActivityResult(requestCode:Int, resultCode:Int, data: Intent){
         super.onActivityResult(requestCode, resultCode, data)
         when (requestCode){
-            10 -> if (resultCode == Activity.RESULT_OK && data !=null){
+            10 -> if (resultCode == Activity.RESULT_OK){
                 val result = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS)
                 txtResultado.setText(result.get(0))
 
