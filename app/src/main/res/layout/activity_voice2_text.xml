@@ -30,9 +30,10 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="60dp"
+            android:contentDescription="Voz"
             android:gravity="center"
             android:onClick="getSpeechInput"
-            android:src="@drawable/voz"/>
+            android:src="@mipmap/voz" />
 
     </RelativeLayout>
 

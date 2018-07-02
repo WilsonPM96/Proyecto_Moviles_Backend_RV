@@ -15,9 +15,18 @@ class MainActivity : AppCompatActivity() {
             view: View? -> registrarEstudiante()
         }
 
+        boton_voz.setOnClickListener{
+            view: View? ->  escucharvoz()
+        }
+
     }
     fun registrarEstudiante(){
         intent = Intent(this, Usuarios::class.java)
+        startActivity(intent)
+    }
+
+    fun escucharvoz(){
+        intent = Intent(this, Voice2TextActivity::class.java)
         startActivity(intent)
     }
 }

@@ -15,7 +15,7 @@ class Voice2TextActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_voice2_text)
         txtResultado.findViewById(R.id.txtResultado) as TextView
 
     }
